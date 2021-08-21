@@ -14,7 +14,7 @@ const deliveryChargeField = document.getElementById("delivery-charge");
 
 const bestPriceField = document.getElementById("best-price")
 const total = document.getElementById("total-price");
-let grandTotal = document.getElementById("grand-total-price");
+const grandTotal = document.getElementById("grand-total-price");
 updateTotal()
 
 // update on the html
