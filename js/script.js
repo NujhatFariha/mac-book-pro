@@ -15,7 +15,7 @@ const deliveryChargeField = document.getElementById("delivery-charge");
 const bestPriceField = document.getElementById("best-price")
 // id call for total price
 const total = document.getElementById("total-price");
-const grandTotal = document.getElementById("grand-total-price");
+let grandTotal = document.getElementById("grand-total-price");
 updateTotal()
 
 
@@ -55,6 +55,45 @@ function updateTotal(){
     const totalPrice = bestPrice + extraMemoryCost +extraStorageCost + deliveryCharge ;
     total.innerText = totalPrice;
     grandTotal.innerText = totalPrice;
-
 }
+
+
+// // const promoCodeApplyField = document.getElementById('promo-code-apply')
+
+// // promoCodeApplyField.addEventListener('click', function () {
+// //     // get promo code
+// //     const promoCodeInputField = document.getElementById('promo-code-input');
+// //     const promoCode = promoCodeInputField.value;
+    
+// // });
+
+// // function getPromoCode(){
+// //     const promoCode = promoCodeInputField.value;
+// //      // check promo code
+// //      if (promoCode == 'stevekaku') {
+// //         grandTotal = totalPrice * 0.8;
+// //     }
+// // }
+
+
+// const promoCodeApplyField = document.getElementById("promo-code-apply");
+// getPromoCode()
+
+// promoCodeApplyField.addEventListener("click", function (){
+//     promoCodeInputField.value = promoCode;
+//     const promoCode = promoCodeInputField.value;
+//     getPromoCode()
+// })
+// function getPromoCode(){
+//         cons grandTotalPrice= grandTotal.innerText
+//          // check promo code
+//          if (promoCode == 'stevekaku') {
+//            grandTotal = totalPrice * 0.8;
+//         }else{
+//             return "you are not eligible for the discount"
+//         }
+//     }
+//     getPromoCode()
+
+
 
