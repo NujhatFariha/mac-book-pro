@@ -1,0 +1,11 @@
+/* custom style */
+
+.hover-effect:hover {
+    color: #FFFFFF;
+    background-color: black;
+    transition: 1ms;
+}
+   
+
+
+
